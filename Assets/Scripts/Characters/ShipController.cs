@@ -57,6 +57,7 @@ namespace Characters
         
         public override void OnStartClient()
         {
+            _playerColor = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
             GetComponent<Renderer>().material.color = _playerColor;
             gameObject.name = _playerName;
         }
